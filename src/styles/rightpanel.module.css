@@ -28,7 +28,13 @@
 }
 
 .middlecontainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 5%;
+  margin-right: 5%;
 }
+
 
 .bottomcontainer {
   display: flex;
