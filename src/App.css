@@ -13,18 +13,5 @@
   display: flex;
   border-radius: 10px;
   margin: 10rem;
+  position: relative;
 }
-
-.right-side {
-  background-color: red;
-  box-sizing: border-box;
-  height: 85%;
-  width: 50%;
-  display: grid;
-  border-bottom: solid black 3px;
-  border-right: solid black 3px;
-  border-top: solid black 3px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
