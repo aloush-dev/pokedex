@@ -1,0 +1,31 @@
+
+  .dpad {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-left: 30px;
+  }
+  .dpad::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #232323;
+    height: 30px;
+    margin-top: -15px;
+    top: 50%;
+    left: 5px;
+    right: 5px;
+    z-index: 9;
+  }
+  .dpad::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #232323;
+    width: 30px;
+    margin-left: -15px;
+    left: 50%;
+    top: 5px;
+    bottom: 5px;
+    z-index: 9;
+  }
