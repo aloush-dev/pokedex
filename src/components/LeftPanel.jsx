@@ -1,9 +1,12 @@
 import style from "../styles/leftpanel.module.css";
 import pokeballimg from "../pokeball.png";
 import { Dpad } from "./Dpad";
-import { useEffect } from "react";
+import { useState } from "react";
+import { Pokeball } from "./Pokeball";
 
-export const LeftPanel = ({ pokemon }) => {
+export const LeftPanel = ({ pokemon, loading, setLoading }) => {
+
+
   let id = ("00" + pokemon.id).slice(-3);
   const img = pokemon.sprites
     ? `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png`
@@ -26,7 +29,9 @@ export const LeftPanel = ({ pokemon }) => {
       <div className={style.screencontainer}>
         <div className={style.screenborder}>
           <div className={style.screen}>
-            <img src={img} alt="pokemon sprite"></img>
+     
+              <img src={img} alt="pokemon sprite"></img>
+     
           </div>
           <div className={style.bordercircle}></div>
         </div>

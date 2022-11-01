@@ -1,6 +1,14 @@
 .box {
   background-color: #28aafd;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   border: #196797 solid 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  font-size: 2rem;
+  font-weight: bolder;
 }
